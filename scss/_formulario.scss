@@ -1,0 +1,123 @@
+/* SECCIÓN DEL FORMULARIO */
+
+.fondoForm {
+    width: $ancho-principal;
+    max-height: 320px;
+    background-image: url(../img/volqfondo.png.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: $texto-centrado;
+    @include flexRow;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorUno {
+    max-width: 500px;
+    width: $ancho-principal;
+    height: 100%;
+}
+
+.contenedorP {
+    color: $color-secundario;
+    font-size: $fuente-texto;
+    font-weight: $fuente-negrita;
+    text-align: left;
+    top: 20px;
+}
+
+.contenedorR {
+    color: $color-secundario;
+    font-size: 42px;
+    text-align: $texto-centrado;
+    top: 95px;
+}
+
+.contenedorT {
+    color: $color-secundario;
+    font-size: $fuente-pequeña;
+    text-align: $texto-centrado;
+    top: 300px;
+}
+
+.parrafoUno,
+.parrafoDos {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+/* FORMULARIO */
+
+form {
+    max-width: 500px;
+    width: $ancho-principal;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.contenedorDos {
+    width: $ancho-principal;
+    max-width: 500px;
+    height: 310px;
+}
+
+label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+input {
+
+    &[type="text"],
+    &[type="email"] {
+        display: block;
+        width: $ancho-principal;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+    }
+}
+
+textarea {
+    display: block;
+    width: $ancho-principal;
+    height: 29%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.btnFormulario {
+    background: linear-gradient(to bottom right, #8d9ac7, #24448A);
+    color: $color-secundario;
+    padding: 8px 13px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: $transicion;
+
+    &:hover {
+        background: linear-gradient(to top left, #8d9ac7, #24448A);
+        transform: scale(1.1, 1.1);
+    }
+
+    &:active {
+        background: radial-gradient(ellipse, #8d9ac7, #24448A);
+    }
+}
+
+input:focus,
+textarea:focus {
+    font-size: $fuente-pequeña;
+}

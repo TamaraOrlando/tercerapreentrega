@@ -1,0 +1,49 @@
+/* MIXIN */
+
+// Sin parámetros
+
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin titulos {
+    color: #24448A;
+    font-size: 28px;
+    padding-top: 80px;
+}
+
+@mixin ancla {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@mixin margin {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+@mixin lineaDivisoria {
+    border-radius: 20px;
+    border: #24448A solid 1.80px;
+    margin-left: 150px;
+    margin-right: 190px;
+}
+
+// Con parámetros
+
+@mixin marginConParametros($left, $right) {
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin paddingConParametros($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}

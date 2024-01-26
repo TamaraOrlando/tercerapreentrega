@@ -1,0 +1,78 @@
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+}
+
+.contenedorFooter {
+    color: $color-principal;
+    font-size: $fuente-texto;
+    font-weight: $fuente-negrita;
+    text-align: left;
+    align-self: end;
+    padding-top: 50px;
+    padding-bottom: 7px;
+    margin-left: 150px;
+}
+
+.contenedorFooterDatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $color-principal;
+    font-size: 19px;
+    align-self: end;
+}
+
+.contenedorFooterUno {
+    text-align: left;
+    padding-left: 120px;
+}
+
+.trVialWeight {
+    font-weight: $fuente-negrita;
+}
+
+.contenedorFooterDos {
+    text-align: left;
+}
+
+.contenedorFooterPie {
+    color: $color-principal;
+    font-size: 15px;
+    text-align: $texto-centrado;
+    align-self: end;
+    padding-top: $padding-arriba;
+}
+
+.eliminoViñetas {
+    list-style-type: none;
+}
+
+p span {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: $color-principal;
+        position: absolute;
+        height: 1%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 4px;
+    }
+}
+
+.aLink {
+
+    &:link,
+    &:visited {
+        color: $color-principal;
+    }
+
+    &:hover {
+        color: $color-principal;
+        transition: $transicion;
+    }
+}

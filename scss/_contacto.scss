@@ -1,0 +1,52 @@
+/* CONTACTO */
+
+.contactoHUno {
+    @include titulos;
+    font-weight: $fuente-negrita;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    margin-left: 150px;
+}
+
+.contactoContenedorPrincipal {
+    @include flexRow;
+    @include margin;
+    padding-top: 100px;
+}
+
+.contactoContenedorUno {
+    @include flexColumn;
+    width: $ancho-principal;
+    justify-content: start;
+    align-items: start;
+    padding-left: 70px;
+}
+
+.contactoUbicacionTitulo {
+    @include titulos;
+    display: flex;
+    align-items: start;
+}
+
+.iconoUbicacion {
+    color: $color-principal;
+    display: flex;
+    justify-content: start;
+    padding-left: 123px;
+}
+
+.contactoContenedorDos {
+    width: $ancho-principal;
+}
+
+div iframe {
+    width: $ancho-principal;
+    max-width: 700px;
+    height: 500px;
+}
+
+.lineaDivisoriaDos {
+    @include lineaDivisoria;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}

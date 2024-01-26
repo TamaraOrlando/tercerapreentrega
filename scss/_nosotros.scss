@@ -1,0 +1,39 @@
+/* NOSOTROS */
+
+.nosotrosContenedorPrincipal {
+    @include flexRow;
+    @include margin;
+    justify-content: space-evenly;
+}
+
+.nosotrosContenedorUno {
+    width: 80%;
+    color: $color-principal;
+}
+
+.nosotrosHUno {
+    @include titulos;
+    font-weight: $fuente-negrita;
+}
+
+.nosotrosP {
+    font-size: 20px;
+    padding-top: $padding-arriba;
+    padding-bottom: 80px;
+}
+
+.nosotrosContenedorDos {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: $padding-arriba;
+    margin-right: 70px;
+}
+
+.fotoCamionViejo {
+    width: 55%;
+    height: 630px;
+    border-radius: 10px;
+    border: $color-principal solid 1px;
+}

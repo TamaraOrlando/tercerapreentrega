@@ -1,0 +1,31 @@
+/* ICONO DE WHATSAPP FLOTANTE */
+
+.whatsappContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsappIcon {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: $texto-centrado;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background-color: #128C7E;
+        transform: scale(1.2, 1.2);
+    }
+}

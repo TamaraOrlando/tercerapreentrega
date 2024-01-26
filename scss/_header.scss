@@ -1,0 +1,40 @@
+/* ENCABEZADO */
+
+header {
+    background-color: $color-principal;
+    width: $ancho-principal;
+    position: fixed;
+}
+
+.logo {
+    width: 80px;
+    max-height: 150px;
+    margin-left: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    color: $color-secundario;
+    margin-right: 150px;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    a {
+        @include ancla;
+        font-weight: none;
+        font-size: $fuente-pequeña;
+        transition: $transicion;
+
+        &:hover {
+            color: $color-secundario;
+            font-size: 20px;
+        }
+    }
+}
